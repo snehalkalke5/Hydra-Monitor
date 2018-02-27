@@ -1,0 +1,44 @@
+URI,METHOD,BODY
+/getUserData?UserLogin=abhik&Password=abhik&UserID=3,GET,"""nil"""
+/getListOfCIs?TicketID=2&UserLogin=abhik&Password=abhik,GET,"""nil"""
+/getTicketHistory?userLogin=abhik&password=abhik&ticketID=2,GET,"""nil"""
+/getSLAInfo?userLogin=abhik&password=abhik&ticketID=2,GET,"""nil"""
+/getArticle?ticketID=428&userLogin=abhik&password=abhik&PageSize=5&PageNumber=1,GET,"""nil"""
+/getQueueTemplateList?userLogin=abhik&password=abhik&QueueID=2,GET,"""nil"""
+/getTemplateContent?userLogin=abhik&password=abhik&TemplateID=1,GET,"""nil"""
+/getTicketHistoryVersionTwo?UserLogin=abhik&Password=abhik&TicketID=462&PageSize=5&PageNumber=1,GET,"""nil"""
+/getProcessInformation?UserLogin=abhik&Password=abhik&TicketID=525,GET,"""nil"""
+/getLinkedItems?UserLogin=abhik&Password=abhik&TicketID=2&PageNumber=1&PageSize=10,GET,"""nil"""
+/getTicketInfo?TicketID=2&UserLogin=abhik&Password=abhik,GET,"""nil"""
+/updateTicket,POST,"{
+   ""UserLogin"":""abhik"",
+   ""Password"":""abhik"",
+   ""TicketID"":1357,
+   ""Ticket"":{
+      ""Title"":""some ticket title"",
+      ""PendingTime"":{
+         ""Diff"":10080
+        }
+      }
+}
+"
+/getTicketDynamicField?UserLogin=abhik&Password=abhik&TicketID=2,GET,"""nil"""
+/getListAssignedQueue?userLogin=abhik&password=abhik,GET,"""nil"""
+/getUserColumnPreference?Action=AgentIncident&userLogin=abhik&password=abhik,GET,"""nil"""
+/getListAgents?userLogin=abhik&password=abhik&Search=1&Term=A,GET,"""nil"""
+/felicity/setUserColumnPreferences,POST,"{ ""UserLogin"" : ""abhik"", ""Password"" : ""abhik"", ""Action"" : ""AgentIncident"", ""ColumnSelected"" : [""Age"",""DWSE""] }"
+/getListGroupFilter?userLogin=abhik&password=abhik&UserAccess=1,GET,"""nil"""
+/getListTicketState?userLogin=abhik&password=abhik,GET,"""nil"""
+/listPriority?userLogin=abhik&password=abhik,GET,"""nil"""
+/listType?userLogin=abhik&password=abhik,GET,"""nil"""
+/custListAjax?userLogin=yazadb&password=yazadb&Search=1&Term=a,GET,"""nil"""
+/requestListAjax?userLogin=yazadb&password=yazadb&Search=1&Term=a,GET,"""nil"""
+/getListArticleType?userLogin=abhik&password=abhik,GET,"""nil"""
+/getTicketGrid,POST,"{ ""UserLogin"":""abhik"", ""Password"":""abhik"", ""PageSize"":10, ""pageNumber"":2, ""Action"":""AgentIncident"", ""TicketNumber"":"""", ""TypeID"":2, ""QueueIDs"":[], ""StateIDs"":[], ""CustomerUserLogin"":[], ""PriorityIDs"":[], ""CreatedUserIDs"":[], ""SourceIDs"":[], ""Due"":"""", ""GroupIDs"":[], ""CreatedTime"":"""", ""SortBy"":""Owner"", ""OrderBy"":""Up"" }"
+/getCreatedTimeRange?userLogin=abhik&password=abhik,GET,"""nil"""
+/setAgentTicketBulk,POST,"{ ""UserLogin"":""abhik"", ""Password"":""abhik"", ""Action"":""AgentTicketBulk"", ""TicketIDs"":[""450"",""525""], ""MergeTo"":""2017090810000035"", ""Subaction"":""Do"", ""Priority"":""P3"", ""TypeID"":3, ""StateID"":11, ""QueueID"":1728, ""Owner"":"""", ""ResponsibleID"":"""", ""Responsible"":"""", ""PriorityID"":"""", ""Queue"":"""", ""Subject"":"""", ""Body"":"""", ""ArticleTypeID"":"""", ""ArticleType"":"""", ""State"":"""", ""MergeToSelection"":"""", ""LinkTogether"":"""", ""EmailSubject"":"""", ""EmailBody"":"""", ""EmailTimeUnits"":"""", ""LinkTogetherParent"":"""", ""Unlock"":"""", ""MergeToChecked"":"""", ""MergeToOldestChecked"":"""", ""Year"":""2017"", ""Month"":""12"", ""Day"":""2"", ""Hour"":""23"", ""Minute"":""23"" }"
+/getCatalogList?UserLogin=abhik&Password=abhik,GET,"""nil"""
+/getCategoryList?UserLogin=abhik&Password=abhik&Catalog=2&ID=-1,GET,"""nil"""
+/getCategoryItemList?UserLogin=abhik&Password=abhik&Category=2&ID=-1,GET,"""nil"""
+/getGlobalSearch?UserLogin=abhik&Password=abhik&term=u,GET,"""nil"""
+/getPublicFAQ?UserLogin=abhik&Password=abhik&ItemID=1,GET,"""nil"""

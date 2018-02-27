@@ -1,0 +1,29 @@
+<HTML>
+<HEAD><TITLE> Hydra Status</TITLE>
+	 <meta http-equiv="refresh" content="5">
+ </HEAD>
+<BODY>
+
+<h2>This page was last updated at {{.Description}}</h2>
+<TABLE BORDER="1">
+<TR>
+<TH>URI</TH>
+<TH>METHOD</TH>
+<TH>STATUS</TH>
+<TH>Description</TH>
+</TR>
+{{range .APISlice}}
+<TR>
+<TD>{{.URI}}</TD>
+<TD>{{.Method}}</TD>
+<TD>{{.Status}}</TD>
+<TD><A HREF="/description?API={{.ID}}">Show Description</A></TD>
+</TR>
+{{end}}
+</TABLE>
+<HR/>
+<A HREF="https://github.com/Unotechsoftware/Felicity3.0/Middleware/Hydra">LEARN MORE ABOUT HYDRA</A>
+<HR/>
+<A HREF="https://github.com/Unotechsoftware/Felicity3.0/Middleware/Hydra-Monitor">LEARN MORE ABOUT THIS APPLICATION</A>
+</BODY>
+</HTML>
